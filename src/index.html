@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTD - Advogados</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="../img/logo_ctd.svg" width="200px" height="auto" alt="logotipo" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#sobre__nos">Sobre nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <!-- BANNER -->
+      <div class="banner">
+        <img src="" alt="Banner" />
+        <h1>Seja Bem vindo ao CTD Advogados</h1>
+      </div>
+      <!-- SOBRE NÓS -->
+      <div id="sobre__nos">
+        <p>
+          O Lorem Ipsum é um texto modelo da indústria tipográfica e de
+          impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por
+          estas indústrias desde o ano de 1500, quando uma misturou os
+          caracteres de um texto para criar um espécime de livro.
+        </p>
+        <a href="#contato"
+          ><button type="button" class="btn__sobrenos">
+            Entre em Contato
+          </button></a
+        >
+      </div>
+      <!-- SERVIÇOS -->
+      <div class="container" id="servicos" alt="Serviços">
+        <!-- precisa linkar as areas aqui -->
+        <div class="caixa">
+          <img class="img__caixa" src="" alt="" />
+          <span class="titulo__caixa">Administrativo</span>
+          <span class="link__caixa"
+            ><a href="./areas/area_administrativo.html">Saiba mais</a></span
+          >
+        </div>
+        <div class="caixa">
+          <img class="img__caixa" src="" alt="" />
+          <span class="titulo__caixa">Ambiental</span>
+          <span class="link__caixa"
+            ><a href="./areas/area_ambiental.html">Saiba mais</a></span
+          >
+        </div>
+        <div class="caixa">
+          <img class="img__caixa" src="" alt="" />
+          <span class="titulo__caixa">Comercial</span>
+          <span class="link__caixa"
+            ><a href="./areas/area_comercial.html">Saiba mais</a></span
+          >
+        </div>
+        <div class="caixa">
+          <img class="img__caixa" src="" alt="" />
+          <span class="titulo__caixa">Tributário</span>
+          <span class="link__caixa"
+            ><a href="./areas/area_tributario.html">Saiba mais</a></span
+          >
+        </div>
+      </div>
+      <!-- EQUIPE -->
+      <div class="container" id="equipe" alt="Equipe">
+        <!-- precisa linkar as areas aqui -->
+        <div class="caixa">
+          <img class="img__caixa" src="../img/henry_cavill.jpg" width="250px" alt="" />
+          <span class="titulo__caixa">Henry Cavill</span>
+          <span class="link__caixa"
+            ><a href="./equipes/equipe_cavill.html">Saiba mais</a></span
+          >
+        </div>
+        <div class="caixa">
+          <img class="img__caixa" src="../img/charlize_theron.jpg" width="250px" alt="" />
+          <span class="titulo__caixa">Charlize Theron</span>
+          <span class="link__caixa"
+            ><a href="./equipes/equipe_theron.html">Saiba mais</a></span
+          >
+        </div>
+        <div class="caixa">
+          <img class="img__caixa" src="../img/viola_davis.jpg" width="250px" alt="" />
+          <span class="titulo__caixa">Viola Davis</span>
+          <span class="link__caixa"
+            ><a href="./equipes/equipe_davis.html">Saiba mais</a></span
+          >
+        </div>
+      </div>
+      <!-- FALE CONOSCO -->
+      <div id="contato">
+        <form class="fale__conosco">
+          <div class="nome__form">
+            <label for="nome__usuario" class="label__input"
+              >Nome Completo</label
+            >
+            <input
+              type="text"
+              placeholder="João da Silva Santos"
+              id="nome__usuario"
+            />
+          </div>
+          <div class="email__form">
+            <label for="email__usuario" class="">Endereço de Email</label>
+            <input
+              type="email"
+              placeholder="email@gmail.com"
+              id="email__usuario"
+            />
+          </div>
+          <div class="telefone__form">
+            <label for="telefone__usuario" class=""
+              >Telefone para contato</label
+            >
+            <input
+              type="tel"
+              placeholder="(99) 9 9999-9999"
+              id="telefone__usuario"
+            />
+            <div id="" class=""></div>
+          </div>
+          <div class="texto__form">
+            <label for="">Descreva o motivo do contato:</label>
+            <textarea
+              placeholder="Ex:'Estou com problemas judiciários e gostaria da atenção do advogado Henry Cavill, pois ele é o único que poderá solucionar meu caso, etc."
+              id="texto__usuario"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="checkbox__form">
+            <input type="checkbox" id="checkbox__newsletter" />
+            <label class="label__checkbox" for="checkbox__newsletter"
+              >Aceito receber notícias e atualizações da CTD
+              Advogados</label
+            >
+          </div>
+          <button class=" " type="submit" class="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <ul>
+        <li>Copyright 📀 2021 - CTD Advogados</li>
+        <li><i>Ícone Facebook</i></li>
+        <li><i>Ícone Instagram</i></li>
+        <li><i>Ícone WhatsApp</i></li>
+      </ul>
+    </footer>
+  </body>
+</html>
