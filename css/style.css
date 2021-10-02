@@ -1,0 +1,37 @@
+/* Sumário de Classes e IDs
+
+*index*
+
+.banner             -->     banner parallax da página inicial
+#sobre__nos         -->     seção sobre nós da página inicial
+    .btn__sobrenos  -->     botão da seção sobre nós linkando para o form fale conosco
+#servicos           -->     seção Serviços da página inicial
+#equipes            -->     seção Equipes da página inicial
+
+.container          -->     elemento pai das caixas de serviços e equipes
+    .caixa          -->     elemento filho das caixas de serviços e equipes
+        .img__caixa   --> imagem de fundo das caixas
+        .titulo__caixa   --> titulo das caixas
+        .link-caixa     --> link das caixas levando à página exclusiva
+
+#contato            -->     seção Contato da página inicial
+    .fale__conosco  -->     formulário para solicitar contato
+        .nome__form
+            #nome__usuario
+        .email__form
+            #email__usuario
+        .telefone__form
+            #telefone__usuario
+        .texto__form
+            #texto__usuario
+        .checkbox__form
+            #checkbox__newsletter
+
+        .label__input
+        .label__checkbox
+
+
+
+.banner-areas
+
+*/
