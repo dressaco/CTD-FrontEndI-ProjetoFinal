@@ -2,6 +2,8 @@
 
 *index*
 
+.menu                               -->     menu do header
+
 .banner                             -->     banner parallax da página inicial
 #sobre__nos                         -->     seção sobre nós da página inicial
     .btn__sobrenos                  -->     botão da seção sobre nós linkando para o form fale conosco
@@ -32,10 +34,96 @@
 
 * areas *
 
-.main__area                         -->     seção principal da página específica da área
-.banner__area                       -->     banner da página específica da área
-.titulo__area                       -->     título da página específica da área
-.texto__area                        -->     descrição da página específica da área
-.infos__adicionais                  -->     infos adicionais na seção lateral da página específica da área
+.areas                              -->     body das páginas de áreas
+    .main__area                     -->     seção principal da página específica da área
+        .banner__area               -->     banner da página específica da área
+        .titulo__area               -->     título da página específica da área
+        .texto__area                -->     descrição da página específica da área
+        
+.equipes                            -->     body das páginas de equipe
+    .main__equipe                   -->     seção principal da página específica da equipe
+        .banner__equipe             -->     banner da página específica da equipe
+        .titulo__equipe             -->     título da página específica da equipe
+        .texto__equipe              -->     descrição da página específica da equipe
+        
+    .infos__adicionais              -->     infos adicionais na seção lateral da página específica da área
 
 */
+
+
+* {
+    /*Definição de Cores da Marca*/
+    --colorLight: #ffebc2;
+    --colorMid: #e7aa5f;
+    --colorMidDark: #a78262;
+    --colorDark: #532a13;
+    --colorEmphasis: #d84a31;
+}
+
+body {
+    background-color: var(--colorLight);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/* HOMEPAGE */
+
+.menu {
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    float: left;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--colorMidDark);
+    color: var(--colorLight);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("/img/themis2.jpg");
+  
+    /* Full height */
+    height: 100%;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.banner {
+    position: relative;
+    top: 6rem;
+    height: 700px;
+    filter: brightness(20%);
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+}
+
+.caixa {
+    background-color: var(--colorMidDark)
+}
+
+.img__caixa {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
