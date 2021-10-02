@@ -2,36 +2,40 @@
 
 *index*
 
-.banner             -->     banner parallax da página inicial
-#sobre__nos         -->     seção sobre nós da página inicial
-    .btn__sobrenos  -->     botão da seção sobre nós linkando para o form fale conosco
-#servicos           -->     seção Serviços da página inicial
-#equipes            -->     seção Equipes da página inicial
+.banner                             -->     banner parallax da página inicial
+#sobre__nos                         -->     seção sobre nós da página inicial
+    .btn__sobrenos                  -->     botão da seção sobre nós linkando para o form fale conosco
+#servicos                           -->     seção Serviços da página inicial
+#equipes                            -->     seção Equipes da página inicial
 
-.container          -->     elemento pai das caixas de serviços e equipes
-    .caixa          -->     elemento filho das caixas de serviços e equipes
-        .img__caixa   --> imagem de fundo das caixas
-        .titulo__caixa   --> titulo das caixas
-        .link-caixa     --> link das caixas levando à página exclusiva
+.container                          -->     elemento pai das caixas de serviços e equipes
+    .caixa                          -->     elemento filho das caixas de serviços e equipes
+        .img__caixa                 -->     imagem de fundo das caixas
+        .titulo__caixa              -->     titulo das caixas
+        .link-caixa                 -->     link das caixas levando à página exclusiva
 
-#contato            -->     seção Contato da página inicial
-    .fale__conosco  -->     formulário para solicitar contato
-        .nome__form
-            #nome__usuario
-        .email__form
-            #email__usuario
-        .telefone__form
-            #telefone__usuario
-        .texto__form
-            #texto__usuario
-        .checkbox__form
-            #checkbox__newsletter
+#contato                            -->     seção Contato da página inicial
+    .fale__conosco                  -->     formulário para solicitar contato
+        .nome__form                 -->     elemento filho do formulário para inclusão de nome
+            #nome__usuario          -->     id para link da label com input
+        .email__form                -->     elemento filho do formulário para inclusão de email
+            #email__usuario         -->     id para link da label com input
+        .telefone__form             -->     elemento filho do formulário para inclusão de telefone
+            #telefone__usuario      -->     id para link da label com input
+        .texto__form                -->     elemento filho do formulário para inclusão de comentário
+            #texto__usuario         -->     id para link da label com input
+        .checkbox__form             -->     elemento filho do formulário para assinalar preferência
+            #checkbox__newsletter   -->     id para link da label com input
 
-        .label__input
-        .label__checkbox
+        .label__input               -->     label dos inputs
+        .label__checkbox            -->     label dos checkboxes
 
+* areas *
 
-
-.banner-areas
+.main__area                         -->     seção principal da página específica da área
+.banner__area                       -->     banner da página específica da área
+.titulo__area                       -->     título da página específica da área
+.texto__area                        -->     descrição da página específica da área
+.infos__adicionais                  -->     infos adicionais na seção lateral da página específica da área
 
 */
