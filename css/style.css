@@ -84,6 +84,7 @@ body {
     color: var(--colorLight);
     font-size: 1.5rem;
     font-weight: bold;
+    z-index: 10;
 }
 
 a {
@@ -112,18 +113,115 @@ a {
     filter: brightness(20%);
 }
 
+.secao__container{
+    background-color: var(--colorLight);
+    margin-top: 20%;
+}
+
+h2 {
+    color: var(--colorEmphasis);
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
 .container {
     display: flex;
     gap: 2rem;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
 .caixa {
-    background-color: var(--colorMidDark)
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .img__caixa {
     width: 400px;
     height: 400px;
     object-fit: cover;
+    filter: brightness(50%) sepia(50%);
 }
 
+
+.caixa span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.titulo__caixa {
+    color: var(--colorLight);
+}
+
+.link__caixa {
+    color: #ffffff00;
+}
+
+.img__caixa:hover{
+    filter: brightness(100%);
+    transition-duration: 2s;
+}
+
+.img__caixa:hover + .titulo__caixa {
+    bottom: 8px;
+    right: 16px;
+    transform: translate(-100%, 85%);
+    color: var(--colorEmphasis);
+    transition-duration: 2s;
+}
+
+form{
+    margin: 30px 10px 30px 10px ;
+    width: 700px;
+    height: 420px;
+    background-color: var(--colorLight);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 16px;
+    align-items: center;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    
+}
+
+input[type=text], input[type=email], input[type=tel]{
+    padding: 10px;
+    width: 400px;
+    border: 3px solid #d84a31 ;
+    border-radius: 10px;
+    outline: 0;
+}
+textarea{
+    padding: 10px;
+    width: 400px;
+    resize: none;
+    border: 3px solid #d84a31 ;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.submit{
+    border: 3px solid #d84a31;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 6px 10px;
+}
+
+.submit:hover{
+    border: 3px solid #3b0f08;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #d84a31 5%,#f7d6b3 100%);
+    color: whitesmoke;
+}
