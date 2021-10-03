@@ -44,66 +44,72 @@
           </button></a>
       </div>
       <!-- SERVIÇOS -->
+      <section class="secao__container">
       <h2>Áreas de Atuação</h2>
       <div class="container" id="servicos" alt="Serviços">
         <!-- precisa linkar as areas aqui -->
         <div class="caixa">
-          <img class="img__caixa" src="./img/administrativo.jpg" width="250px" alt="" />
-          <span class="titulo__caixa">Administrativo</span>
-          <span class="link__caixa"
-            ><a href="./src/areas/area_administrativo.html">Saiba mais</a></span
-          >
+          <a href="./src/areas/area_administrativo.html">
+            <img class="img__caixa" src="./img/administrativo.jpg" width="250px" alt="" />
+
+            <span class="titulo__caixa">Administrativo</span>
+            <span class="link__caixa">Saiba mais</span>
+          </a>
         </div>
         <div class="caixa">
-          <img class="img__caixa" src="./img/ambiental.jpg" width="250px" alt="" />
-          <span class="titulo__caixa">Ambiental</span>
-          <span class="link__caixa"
-            ><a href="./src/areas/area_ambiental.html">Saiba mais</a></span
-          >
+          <a href="./src/areas/area_ambiental.html">
+            <img class="img__caixa" src="./img/ambiental.jpg" width="250px" alt="" />
+            <span class="titulo__caixa">Ambiental</span>
+            <span class="link__caixa">Saiba mais</span>
+          </a>
         </div>
         <div class="caixa">
-          <img class="img__caixa" src="./img/comercial.jpg" width="250px" alt="" />
-          <span class="titulo__caixa">Comercial</span>
-          <span class="link__caixa"
-            ><a href="./src/areas/area_comercial.html">Saiba mais</a></span
-          >
+          <a href="./src/areas/area_comercial.html">
+            <img class="img__caixa" src="./img/comercial.jpg" width="250px" alt="" />
+            <span class="titulo__caixa">Comercial</span>
+            <span class="link__caixa">Saiba mais</span>
+          </a>
         </div>
         <div class="caixa">
-          <img class="img__caixa" src="./img/tributario.jpg" width="250px" alt="" />
-          <span class="titulo__caixa">Tributário</span>
-          <span class="link__caixa"
-            ><a href="./src/areas/area_tributario.html">Saiba mais</a></span
-          >
+          <a href="./src/areas/area_tributario.html">
+            <img class="img__caixa" src="./img/tributario.jpg" width="250px" alt="" />
+            <span class="titulo__caixa">Tributário</span>
+            <span class="link__caixa">Saiba mais</span>
+          </a>
         </div>
       </div>
+      </section>
       <!-- EQUIPE -->
+      <section class="secao__container">
       <h2>Nosso Time</h2>
       <div class="container" id="equipe" alt="Equipe">
         <!-- precisa linkar as areas aqui -->
         <div class="caixa">
-          <img class="img__caixa" src="./img/henry_cavill.jpg" width="250px" alt="" />
-          <span class="titulo__caixa">Henry Cavill</span>
-          <span class="link__caixa"
-            ><a href="./src/equipes/equipe_cavill.html">Saiba mais</a></span
-          >
+          <a href="./src/equipes/equipe_cavill.html">
+            <img class="img__caixa" src="./img/henry_cavill.jpg" width="250px" alt="" />
+            <span class="titulo__caixa">Henry Cavill</span>
+            <span class="link__caixa">Saiba mais</span>
+          </a>
         </div>
         <div class="caixa">
-          <img class="img__caixa" src="./img/charlize_theron.jpg" width="250px" alt="" />
-          <span class="titulo__caixa">Charlize Theron</span>
-          <span class="link__caixa"
-            ><a href="./src/equipes/equipe_theron.html">Saiba mais</a></span
-          >
+          <a href="./src/equipes/equipe_theron.html">
+            <img class="img__caixa" src="./img/charlize_theron.jpg" width="250px" alt="" />
+            <span class="titulo__caixa">Charlize Theron</span>
+            <span class="link__caixa">Saiba maisa></span>
+          </a>
         </div>
         <div class="caixa">
-          <img class="img__caixa" src="./img/viola_davis.jpg" width="250px" alt="" />
-          <span class="titulo__caixa">Viola Davis</span>
-          <span class="link__caixa"
-            ><a href="./src/equipes/equipe_davis.html">Saiba mais</a></span
-          >
+          <a href="./src/equipes/equipe_davis.html">
+            <img class="img__caixa" src="./img/viola_davis.jpg" width="250px" alt="" />
+            <span class="titulo__caixa">Viola Davis</span>
+            <span class="link__caixa">Saiba mais</span>
+          </a>
         </div>
       </div>
+      </section>
       <!-- FALE CONOSCO -->
       <div id="contato">
+        <h2>Fale conosco:</h2>
         <form class="fale__conosco">
           <div class="nome__form">
             <label for="nome__usuario" class="label__input"
@@ -132,10 +138,9 @@
               placeholder="(99) 9 9999-9999"
               id="telefone__usuario"
             />
-            <div id="" class=""></div>
-          </div>
+            
           <div class="texto__form">
-            <label for="">Descreva o motivo do contato:</label>
+            <label for="texto__usuario"><b> Descreva o motivo do contato:</b></label>
             <textarea
               placeholder="Ex:'Estou com problemas judiciários e gostaria da atenção do advogado Henry Cavill, pois ele é o único que poderá solucionar meu caso, etc."
               id="texto__usuario"
@@ -144,16 +149,16 @@
             ></textarea>
           </div>
           <div class="checkbox__form">
-            <input type="checkbox" id="checkbox__newsletter" />
-            <label class="label__checkbox" for="checkbox__newsletter"
-              >Aceito receber notícias e atualizações da CTD
-              Advogados</label
-            >
+            <input type="checkbox" id="checkbox__newsletter" value="newsletter"><b>Aceito receber notícias e atualizações da CTD
+              Advogados: </b> </input>
           </div>
-          <button class=" " type="submit" class="submit">Enviar</button>
+          <br>
+          <input type="submit" class="submit"></input>
         </form>
       </div>
     </main>
+    <br>
+    <br>
     <!-- FOOTER -->
     <footer>
       <ul>
