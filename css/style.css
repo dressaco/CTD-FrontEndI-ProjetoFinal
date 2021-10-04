@@ -52,17 +52,24 @@
 
 * {
     /*Definição de Cores da Marca*/
+    --colorLightTransp: #ffebc2a2;
     --colorLight: #ffebc2;
     --colorMid: #e7aa5f;
     --colorMidDark: #a78262;
     --colorDark: #532a13;
     --colorEmphasis: #d84a31;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--colorLight);
     margin: 0;
-    font-family: sans-serif;
+    color: var(--colorDark);
+}
+
+main {
+    margin-top: 6rem;
 }
 
 /* HOMEPAGE */
@@ -83,6 +90,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     z-index: 10;
+    height: 5rem;
 }
 
 a {
@@ -99,27 +107,45 @@ a {
 
   /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: right;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.banner {
-    position: relative;
-    top: 6rem;
-    height: 700px;
-    filter: brightness(20%);
+.secao__container, #sobre__nos, #contato {
+    background-color: var(--colorLightTransp);
+    margin: 10% 2%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    padding: 3rem;
 }
 
-.secao__container {
-    background-color: var(--colorLight);
-    margin-top: 20%;
+.secao__topo {
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.caixa__topo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn__sobrenos {
+    background-color: var(--colorDark);
+    color: var(--colorLight);
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 h2 {
     color: var(--colorEmphasis);
     text-align: center;
-    padding-top: 3rem;
     font-size: 2rem;
 }
 
@@ -141,7 +167,8 @@ h2 {
     width: 400px;
     height: 400px;
     object-fit: cover;
-    filter: brightness(50%) sepia(50%);
+    filter: sepia(80%) saturate(150%) brightness(50%);
+    border-radius: 1rem;
 }
 
 .caixa span {
@@ -162,33 +189,24 @@ h2 {
 }
 
 .img__caixa:hover {
-    filter: brightness(100%);
+    filter: sepia(0%) saturate(100%) brightness(100%);
     transition-duration: 2s;
 }
 
 .img__caixa:hover + .titulo__caixa {
-    bottom: 8px;
-    right: 16px;
-    transform: translate(-100%, 85%);
+    top: 8px;
+    left: 16px;
+    transform: translate(0%, 0%);
     color: var(--colorEmphasis);
     transition-duration: 2s;
 }
 
-#contato {
-    align-items: center;
-    position: absolute;
-    width: 100%;
-}
-
 
 form {
-    margin: 30px 10px 30px 10px;
-    width: 700px;
-    height: 420px;
-    background-color: var(--colorLight);
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    size: 16px;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    size: 1rem;
     display: inline-block;
     position: relative;
 }
@@ -203,7 +221,7 @@ input[type="email"],
 input[type="tel"] {
     padding: 10px;
     width: 400px;
-    border: 3px solid #d84a31;
+    border: 3px solid var(--colorEmphasis);
     border-radius: 10px;
     outline: 0;
 }
@@ -211,13 +229,17 @@ textarea {
     padding: 10px;
     width: 400px;
     resize: none;
-    border: 3px solid #d84a31;
+    border: 3px solid var(--colorEmphasis);
     border-radius: 10px;
     outline: 0;
 }
 
+input:focus, textarea:focus {
+    background-color: var(--colorLight);
+}
+
 .submit {
-    border: 3px solid #d84a31;
+    border: 3px solid var(--colorEmphasis);
     border-radius: 10px;
     display: inline-block;
     cursor: pointer;
@@ -226,8 +248,35 @@ textarea {
 }
 
 .submit:hover {
-    border: 3px solid #3b0f08;
+    border: 3px solid var(--colorDark);
     border-radius: 10px;
-    background: linear-gradient(to bottom, #d84a31 5%, #f7d6b3 100%);
+    background: linear-gradient(to bottom, var(--colorEmphasis) 5%, var(--colorLight) 100%);
     color: whitesmoke;
+}
+
+footer {
+    background-color: var(--colorMid);
+    color: var(--colorDark);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    font-weight: bolder;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.redes__sociais {
+    display: flex;
+    gap: 1rem;
+}
+
+.caixa__form {
+    display: flex;
+    justify-content: center;
 }
