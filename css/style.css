@@ -58,8 +58,10 @@
     --colorMidDark: #a78262;
     --colorDark: #532a13;
     --colorEmphasis: #d84a31;
+
     font-family: sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 16rem;
 }
 
 body {
