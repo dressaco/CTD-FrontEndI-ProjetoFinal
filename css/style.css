@@ -68,11 +68,11 @@ body {
     background-color: var(--colorLight);
     margin: 0;
     color: var(--colorDark);
-    min-height: 100vh;
+    /*min-height: 100vh*/
 }
 
 main {
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 /* HOMEPAGE */
@@ -90,10 +90,10 @@ main {
     gap: 2rem;
     background-color: var(--colorMidDark);
     color: var(--colorLight);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     z-index: 10;
-    height: 5rem;
+    height: 4rem;
 }
 
 a {
@@ -125,7 +125,7 @@ a {
 }
 
 .secao__topo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
 }
 
@@ -137,10 +137,11 @@ a {
 }
 
 .btn__sobrenos {
-    background-color: var(--colorDark);
+    background-color: var(--colorEmphasis);
     color: var(--colorLight);
+    margin-top: 1rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -149,7 +150,7 @@ a {
 h2 {
     color: var(--colorEmphasis);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .container {
@@ -167,8 +168,8 @@ h2 {
 }
 
 .img__caixa {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
     object-fit: cover;
     filter: sepia(80%) saturate(150%) brightness(50%);
     border-radius: 1rem;
@@ -179,7 +180,7 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
 
@@ -237,10 +238,6 @@ textarea {
     outline: 0;
 }
 
-input:focus, textarea:focus {
-    background-color: var(--colorLight);
-}
-
 .submit {
     border: 3px solid var(--colorEmphasis);
     border-radius: 10px;
@@ -267,11 +264,7 @@ footer {
     padding: 1rem 3rem;
     align-items: center;
     font-weight: bolder;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 95%;
+    font-size: 0.85rem;
 }
 
 footer img {
@@ -321,14 +314,14 @@ footer img {
     grid-template-columns: 1fr 250px;
     grid-template-areas:
     "conteudo   relacionados"
-  }
+}
 
 
 /* Main */
 .main__equipe {
-  display: flex;
-  font-weight: 900;
-  padding: 25px;
+    display: flex;
+    font-weight: 900;
+    padding: 25px;
 }
 
 .banner__equipe img{
@@ -392,4 +385,264 @@ footer img {
     align-items: center;
     font-weight: 900;
     justify-content: center;  
+}
+
+/* AREAS */
+.titulo__area {
+    margin-top: 130px;
+}
+
+.banner__area img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.infos__area {
+    margin-bottom: 6rem;
+}
+
+/* LOGIN */
+.body__login {
+    background-image: url(/CTD-FrontEndI-ProjetoFinal/img/login_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__login {
+    margin-top: 150px;
+}
+
+/* container do form */
+
+fieldset{
+    border: none; 
+}
+
+
+/* container geral */
+.container-form{
+
+    /* display: grid;
+    grid-template-columns: 13% 11% 32% 45%;
+    grid-template-rows: 25% 25% 25% 25%; */
+
+    display: flex;
+    width:380px;
+    height: 525px;
+    position: relative;
+    margin: 5% auto;
+    background:var(--colorLightTransp);
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+#login-container{
+
+
+    /* grid-row-start: 1 ; */
+
+    justify-content: center;
+
+
+
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0,5s;
+    margin-top: -45px;
+    left: 50px;
+
+}
+
+#registrar-container{
+
+    grid-row-start: 2;
+    
+
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0,5s;
+    margin-top: -90px;
+    left: 400px;
+
+}
+
+
+
+/* botao login/inscrever */
+
+.btnbox{
+    
+    grid-column-start: 3 ;
+    
+    width: 200px;
+    height: 35px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow:rgba(56, 8, 8, 0.5) 0 0 20px 9px ;
+    border-radius: 20px;
+
+
+}
+
+.alt{
+    margin-left: 30px;
+    padding: 10px;
+cursor: pointer;
+background: transparent;
+    border:none;
+outline: none;
+position: relative;
+}
+
+#btn-bg{
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(45deg,var(--colorMidDark), var(--colorEmphasis));
+    border-radius: 20px;
+    transition: 0.5s;
+    
+    
+
+}
+
+
+/*estilo input  */
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel], 
+textarea {
+
+    width: 100%;
+padding: 10px 5px;
+margin: 11px 0;
+border: none;
+border-bottom: 1px solid rgb(34, 10, 10);
+    border-radius: 10px;
+outline: none;
+background: transparent;
+}
+
+/* hover campos input */
+
+input:focus, textarea:focus {
+    background-color: var(--colorLight);
+}
+
+.hvr:hover, input:hover, textarea:hover {
+    background-color: var(--colorLight);
+    transition: 0.3s;
+}
+
+/* estilo placeholder input forms */
+::placeholder{
+    color: var(--colorDark);
+}
+
+
+/* estilo botoes */
+
+.btn-submit, .submit{
+    width: 85%;
+padding: 10px 30px;
+cursor: pointer;
+display: block;
+margin: 10px;
+background: linear-gradient(135deg, var(--colorMidDark), var(--colorEmphasis));
+border: 0;
+outline: none;
+border-radius: 30px;
+}
+
+.btn-reset{
+
+    width: 85%;
+padding: 10px 30px;
+cursor: pointer;
+display: block;
+margin: 10px;;
+background: linear-gradient(135deg, var(--colorMidDark), var(--colorEmphasis));
+border: none;
+outline: none;
+border-radius: 20px;
+
+}
+
+#lgin-btn{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+/* checkbox de lembrar a senha e concordar com termos */
+
+.chkbox{
+
+    appearance: none;
+    background-color: rgba(56, 8, 8, 0.5);
+border: 1px solid rgb(32, 2, 2);
+border-radius: 5px;
+/* display: flex;
+    flex-wrap:wrap; */
+position: relative;
+    
+    margin-top: 5px;
+    margin-right: 5px;
+    
+    height: 16px;
+    width: 15px;
+    
+    
+}
+.chkbox:hover{
+
+    background-color: var(--colorEmphasis);
+    transition: 0.3s;
+
+
+
+}
+
+.submit__contato {
+    display: flex;
+    justify-content: center;
+}
+
+#lembra:checked:after,
+#checkbox__newsletter:checked:after {
+
+    content: '✔';
+    font-size: 15px;
+    height: 115px;
+    width: 410px;
+    position: absolute;
+    top: -3px;
+    left: 1px;
+color: rgb(20, 17, 16);
+
+
+}
+#registra:checked:after{
+
+    content: '✔';
+    font-size: 15px;
+    height: 115px;
+    width: 410px;
+    position: absolute;
+    top: -3px;
+    left: 1px;
+color: rgb(20, 17, 16);
+
+
 }
