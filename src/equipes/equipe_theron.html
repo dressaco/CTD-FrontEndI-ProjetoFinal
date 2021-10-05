@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/CTD-FrontEndI-ProjetoFinal/css/style.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="/CTD-FrontEndI-ProjetoFinal/img/ctd-icon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/4b9612e72e.js" crossorigin="anonymous"></script>
 </head>
 <body class="equipes">
     <!-- HEADER -->
@@ -24,14 +25,17 @@
       </nav>
     </header>
     <!-- Main -->
+    <div class="conteudo">
     <main class="main__equipe">
-        <!-- Título -->
-        <div class="titulo__equipe">
-            <h1>Charlize Theron</h1>
-        </div>
         <!-- Banner -->
         <div class="banner__equipe">
+            <!-- Título -->
+            <h1 class="titulo__equipe">Charlize Theron</h1>
             <img src="/CTD-FrontEndI-ProjetoFinal/img/charlize_theron.jpg" alt="Charlize Theron">
+            <p><a href="mailto:henry.cavill@ctd.com"><i class="far fa-envelope"></i> charlize.theron@ctd.com</a><p>
+            <p><a href="https://api.whatsapp.com/send?phone=5511987659685"><i class="fab fa-whatsapp"></i> +55 11 98765-9685</a></p>
+            <p><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i> charlize.theron</a></p>
+            <p><a href="https://g.page/digitalhousebrasil?share"><i class="fas fa-map-marker-alt"></i> Av. Domingos Odália Filho, 301 - Osasco - SP</a></p>
         </div>
         <!-- Descrição -->
         <div class="infos__equipe">
@@ -53,10 +57,27 @@
                 <li>Nullam sagittis mi vitae nulla efficitur, id commodo quam placerat.</li>
             </ul>
         </div>
-    <aside class="infos__adicionais">
-        Equipe Área
-    </aside>
     </main>
+    <aside class="infos__adicionais">
+        <div class="lista_adicionais">
+            <div class="banner__equipe_adicionais">
+                <a href="/CTD-FrontEndI-ProjetoFinal/src/equipes/equipe_cavill.html">
+                <img src="/CTD-FrontEndI-ProjetoFinal/img/henry_cavill.jpg" alt="Henry Cavill">
+            </a>
+            </div>
+            <p>Henry Cavill</p>
+        </div>
+        <div class="lista_adicionais">
+            <div class="banner__equipe_adicionais">
+                <a href="/CTD-FrontEndI-ProjetoFinal/src/equipes/equipe_davis.html">
+                <img src="/CTD-FrontEndI-ProjetoFinal/img/viola_davis.jpg" alt="Viola Davis">
+            </a>
+            </div>
+            <p>Viola Davis</p>
+        </div>
+    </aside>
+    </div>
+
     <!-- FOOTER -->
     <footer>
         <span>Copyright 📀 2021 - CTD Advogados</span>
