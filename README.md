@@ -57,10 +57,9 @@
   ##
   
   <h2 id="autores">Autores</h2>
-  <ol>
-    <li id="andressa"> <a href="https://github.com/dressaco">Andressa Colin</a></li>
-    <li id="elton"> <a href="">Elton Dutra</a></li>
+  <ul>
+    <li id="andressa"> <a href="https://github.com/dressaco">Andressa Collin</a></li>
     <li id="everton"> <a href="https://github.com/etongarcia">Everton Garcia</a></li>
     <li id="luisa"> <a href="https://github.com/LuisaAndrade0607">Luísa Andrade</a></li>
     <li id="thomas"> <a href="https://github.com/Cybervulthor">Thomas Matisi</a></li>
-  </ol>
+  </ul>
