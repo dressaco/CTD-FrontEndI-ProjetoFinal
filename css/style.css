@@ -68,6 +68,7 @@ body {
     background-color: var(--colorLight);
     margin: 0;
     color: var(--colorDark);
+    min-height: 100vh;
 }
 
 main {
@@ -204,7 +205,7 @@ h2 {
 }
 
 
-form {
+.fale__conosco {
     width: auto;
     height: auto;
     padding: 2rem;
@@ -266,6 +267,11 @@ footer {
     padding: 1rem 3rem;
     align-items: center;
     font-weight: bolder;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 95%;
 }
 
 footer img {
@@ -281,4 +287,109 @@ footer img {
 .caixa__form {
     display: flex;
     justify-content: center;
+}
+
+#login__page {
+    display: flex;
+    justify-content: space-around;
+    margin: 8rem 0 2rem 0;
+}
+
+.caixa__login {
+    width: 33%;
+    background-color: var(--colorLightTransp);
+}
+
+.banner__login {
+    background-image: "/CTD-FrontEndI-ProjetoFinal/img/login_photo.jpg";
+    filter: sepia(60%) brightness(50%) blur(0.15rem);
+
+}
+
+
+/* EQUIPES */
+
+/* Conteúdo */
+
+
+.conteudo {
+    max-width: 100%;
+    min-height: 100%;
+
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 250px;
+    grid-template-areas:
+    "conteudo   relacionados"
+  }
+
+
+/* Main */
+.main__equipe {
+  display: flex;
+  font-weight: 900;
+  padding: 25px;
+}
+
+.banner__equipe img{
+    width: 300px;
+    height: 400px;  
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.banner__equipe p{
+    font-weight: 400;
+    font-style: italic;
+    text-align: justify;
+}
+
+.infos__equipe{
+    float: left;
+    display:inline;
+    font-size: 1rem;
+    font-weight: 400;
+    float: left;
+    margin: 80px 0 100px 2rem;
+    text-align: justify;
+}
+
+
+/* Aside */
+
+.lista_adicionais{
+    margin: 0px 0%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lista_adicionais p{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.banner__equipe_adicionais img{
+    width: 200px;
+    height: 200px;  
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.banner__equipe_adicionais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos__adicionais{
+    grid-area: relacionados;
+    margin-top: 150px;
+    padding-top: 50px;
+    align-items: center;
+    font-weight: 900;
+    justify-content: center;  
 }
