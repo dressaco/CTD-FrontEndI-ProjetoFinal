@@ -117,7 +117,7 @@ a {
 
 .secao__container, #sobre__nos, #contato {
     background-color: var(--colorLightTransp);
-    margin: 10% 2%;
+    margin: 10%;
     align-items: center;
     justify-content: center;
     border-radius: 1.5rem;
@@ -155,8 +155,8 @@ h2 {
 
 .container {
     display: flex;
-    gap: 2rem;
-    justify-content: space-around;
+    gap: 3rem;
+    justify-content: center;
     padding-bottom: 3rem;
     flex-wrap: wrap;
 }
